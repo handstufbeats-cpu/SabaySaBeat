@@ -1,0 +1,226 @@
+{
+  "type": "sabaysabeat-program",
+  "version": 1,
+  "exportedAt": "2026-09-15T01:50:10.973Z",
+  "name": "Mono - Riso - Static",
+  "intervalSec": 0,
+  "presets": [
+    {
+      "id": "preset_mu10o21a850nr",
+      "name": "Mono - Riso - Static",
+      "pads": [
+        {
+          "index": 0,
+          "notes": [
+            64,
+            48
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 1,
+          "notes": [
+            49,
+            65
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 2,
+          "notes": [
+            50,
+            66
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 3,
+          "notes": [
+            51,
+            67
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 4,
+          "notes": [
+            44,
+            60
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 5,
+          "notes": [
+            45,
+            61
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 6,
+          "notes": [
+            46,
+            62
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 7,
+          "notes": [
+            47,
+            63
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 8,
+          "notes": [
+            40,
+            56
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 9,
+          "notes": [
+            41,
+            57
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 10,
+          "notes": [
+            42,
+            58
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 11,
+          "notes": [
+            43,
+            59
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 12,
+          "notes": [
+            36,
+            52
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 13,
+          "notes": [
+            37,
+            53
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 14,
+          "notes": [
+            38,
+            54
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 15,
+          "notes": [
+            55,
+            39
+          ],
+          "color": "#ffffff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        }
+      ],
+      "gridLineColor": "#e0e0e0",
+      "gridLineThickness": 1,
+      "paletteColors": [
+        "#ffffff"
+      ],
+      "randomizeColors": true,
+      "fxHeat": false,
+      "fxSplash": true,
+      "fxEnergy": true,
+      "fxCombo": true,
+      "fxPop": false,
+      "fxRiso": true,
+      "fxGrain": true,
+      "risoColorA": "#4f4f4f",
+      "risoColorB": "#000000",
+      "fontWeight": 700,
+      "fontRound": 0,
+      "presetTransitionMs": 500,
+      "energyIntensity": 2
+    }
+  ]
+}
