@@ -19,6 +19,10 @@
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
     height:100%;overflow:hidden;user-select:none;}
 
+  #videoOverlayEl, #gifOverlayEl{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;
+    z-index:0;display:none;background:#000;}
+  #videoOverlayEl.show, #gifOverlayEl.show{display:block;}
+
   #liveGrid{position:fixed;inset:0;background:#000;display:grid;
     grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(4,1fr);
     gap:6px;padding:6px;box-sizing:border-box;z-index:1;
@@ -32,12 +36,12 @@
   .liveCell{container-type:size;}
   .liveCell.pulseIdle{animation:idlePulse 1.1s ease-in-out infinite;}
   @keyframes idlePulse{
-    0%,100%{background-color:rgb(
+    0%,100%{opacity:var(--effects-opacity, 1);background-color:rgb(
       calc(20*(0.66 - 0.16*var(--pulse-intensity, 1)))
       calc(20*(0.66 - 0.16*var(--pulse-intensity, 1)))
       calc(23*(0.66 - 0.16*var(--pulse-intensity, 1)))
     );}
-    50%{background-color:rgb(
+    50%{opacity:var(--effects-opacity, 1);background-color:rgb(
       calc(20*(0.66 + 0.16*var(--pulse-intensity, 1)))
       calc(20*(0.66 + 0.16*var(--pulse-intensity, 1)))
       calc(23*(0.66 + 0.16*var(--pulse-intensity, 1)))
@@ -45,28 +49,25 @@
   }
 
   #grainOverlay{position:fixed;inset:0;z-index:2;pointer-events:none;display:none;
-    mix-blend-mode:overlay;opacity:.55;background-repeat:repeat;background-size:180px 180px;}
+    mix-blend-mode:overlay;opacity:var(--effects-opacity, .55);background-repeat:repeat;background-size:180px 180px;}
   #grainOverlay.show{display:block;}
   #risoOverlay{position:fixed;inset:0;z-index:2;pointer-events:none;display:none;
     filter:saturate(1.7) contrast(1.3) brightness(1.15);}
   #risoOverlay.show{display:block;}
-  .risoLayer{position:absolute;inset:-4px;mix-blend-mode:color;opacity:.5;
+  .risoLayer{position:absolute;inset:-4px;mix-blend-mode:color;opacity:var(--effects-opacity, .5);
     transition:background-color var(--preset-transition-ms, 500ms) ease;}
   .risoLayerA{background:#ff3fa4;transform:translate(-3px,-2px);}
   .risoLayerB{background:#3f7fff;transform:translate(3px,2px);}
-  .risoHalftone{position:absolute;inset:0;mix-blend-mode:multiply;opacity:.4;
+  .risoHalftone{position:absolute;inset:0;mix-blend-mode:multiply;opacity:var(--effects-opacity, .4);
     background-image:radial-gradient(circle, rgba(0,0,0,.6) 1px, transparent 1.4px);
     background-size:5px 5px;}
 
-  #exitLive{position:fixed;top:10px;right:10px;z-index:6;background:rgba(20,20,23,.7);
+  #exitLive{position:fixed;bottom:10px;right:10px;z-index:6;background:rgba(20,20,23,.7);
     border:1px solid var(--line);color:var(--text);border-radius:20px;width:34px;height:34px;
-    font-size:14px;display:none;align-items:center;justify-content:center;}
+    font-size:14px;display:none;align-items:center;justify-content:center;
+    opacity:1;transition:opacity 400ms ease;}
   #exitLive.show{display:flex;}
-  #liveInfo{position:fixed;top:10px;left:10px;z-index:6;font-size:11px;color:var(--dim);
-    background:rgba(20,20,23,.7);border:1px solid var(--line);padding:7px 11px;border-radius:14px;
-    display:none;max-width:60vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-  #liveInfo.show{display:block;}
-  #liveInfo b{color:var(--text);}
+  #exitLive.faded{opacity:0;pointer-events:none;}
 
   /* ---------- Setup / library screen ---------- */
   #setup{position:fixed;inset:0;z-index:10;background:var(--bg);display:flex;flex-direction:column;
@@ -125,6 +126,8 @@
 </head>
 <body>
 
+<video id="videoOverlayEl" muted loop playsinline></video>
+<img id="gifOverlayEl">
 <div id="liveGrid"></div>
 <div id="grainOverlay"></div>
 <div id="risoOverlay">
@@ -132,7 +135,6 @@
   <div class="risoLayer risoLayerB"></div>
   <div class="risoHalftone"></div>
 </div>
-<div id="liveInfo"></div>
 <button id="exitLive" title="Back to library">⚙</button>
 
 <div id="setup">
@@ -170,9 +172,14 @@
     immediately, and if it has more than one, cycles through them automatically at its saved interval.
     Nothing here can be edited; open the main tool on a computer to build or change a program, then
     re-export and re-import it. Imported programs are saved on this device so you won't need to
-    re-import them next time. This player skips the custom label font and the Video Overlay to keep it
-    lightweight — everything else (pad colors, notes, Duration, Heat Intensity, Neighbor Splash, Energy
-    Pulse, Combo Rainbow, Re-Grid, Riso Print, Grain) plays back faithfully.
+    re-import them next time. This player skips the custom label font to keep it lightweight —
+    everything else, including Video Overlay, plays back faithfully (pad colors, notes, Duration, Heat
+    Intensity, Neighbor Splash, Energy Pulse, Combo Rainbow, Re-Grid, Riso Print, Grain). If a program
+    uses Video Overlay, the video/GIF itself has to be embedded in the exported file for it to show up
+    here — export it again from the main tool if a program's video isn't appearing. While live, the
+    gear icon
+    in the bottom-right fades out after 3 seconds so it doesn't sit over the grid — tap anywhere on
+    screen to bring it back.
   </div>
 </div>
 
@@ -204,6 +211,8 @@
   let presetTransitionMs = 500;
   let regridMode = 'enlarge';
   let energyIntensity = 1;
+  let fxVideo = false, videoOpacity = 70, videoGridTransparency = 55;
+  let currentMediaUrl = null, currentMediaType = null; // the active program's bundled video/gif, if any
 
   const padActive = {}, hitTimestamps = {}, longTermHits = {}, comboChainTimers = {};
   let chainPads = [], chainLastHitTime = 0, chainBaseHue = 0, chainBaseIndex = 0, regridAlternateFlip = false;
@@ -306,7 +315,7 @@
       card.innerHTML = `
         <div class="info">
           <div class="pname">${program.name}</div>
-          <div class="pmeta">${count} preset${count===1?'':'s'}${count>1?' · every '+program.intervalSec+'s':''}</div>
+          <div class="pmeta">${count} preset${count===1?'':'s'}${count>1?' · every '+program.intervalSec+'s':''}${program.media?' · 🎬 has video/GIF':''}</div>
         </div>
         <button class="goLiveBtn" data-role="go">▶ Go Live</button>
         <button class="delBtn" data-role="del">×</button>
@@ -335,7 +344,8 @@
         }
         const program = {
           id: uid('program_'), name: bundle.name || file.name,
-          intervalSec: Math.max(0, bundle.intervalSec || 0), presets: bundle.presets
+          intervalSec: Math.max(0, bundle.intervalSec || 0), presets: bundle.presets,
+          media: (bundle.media && bundle.media.dataUrl) ? bundle.media : null
         };
         programs[program.id] = program;
         await saveProgramRow(program);
@@ -556,12 +566,13 @@
       if(padActive[n]) return;
       const cell = liveCells[n];
       if(!cell) return;
+      const strength = fxVideo ? 0.35 * effectsAlpha() : 0.35;
       cell.style.transition = 'background-color 90ms ease-out';
-      cell.style.backgroundColor = blendWithBlack(color, 0.35);
+      cell.style.backgroundColor = blendWithBlack(color, strength);
       setTimeout(() => {
         if(padActive[n]) return;
         cell.style.transition = 'background-color 190ms ease-out';
-        cell.style.backgroundColor = '';
+        cell.style.backgroundColor = fxVideo ? idleVideoBackground() : '';
       }, 65);
     });
   }
@@ -607,7 +618,7 @@
     if(!cell) return;
     const fadeMs = Math.max(MIN_FADE_MS, Math.min(MAX_FADE_MS, requestedMs||MIN_FADE_MS));
     cell.style.transition = `background-color ${fadeMs}ms ease-out, opacity ${fadeMs}ms ease-out`;
-    cell.style.backgroundColor = '';
+    cell.style.backgroundColor = fxVideo ? idleVideoBackground() : '';
     cell.style.opacity = 1;
     const labelEl = cell.querySelector('.padLabel');
     if(labelEl){
@@ -713,6 +724,57 @@
   }
   function stopGrainFlicker(){ clearInterval(grainFlickerTimer); grainFlickerTimer=null; }
 
+  // ---------- Video/GIF background overlay ----------
+  const videoOverlayEl = document.getElementById('videoOverlayEl');
+  const gifOverlayEl = document.getElementById('gifOverlayEl');
+  function effectsAlpha(){ return Math.max(0, 1 - videoGridTransparency/100); }
+  function idleVideoBackground(){ return `rgba(20,20,23,${effectsAlpha().toFixed(2)})`; }
+  function activeOverlayEl(){
+    if(!currentMediaType) return null;
+    return currentMediaType.startsWith('video/') ? videoOverlayEl : gifOverlayEl;
+  }
+  function applyVideoOpacityUI(){
+    const el = activeOverlayEl();
+    if(el) el.style.opacity = (videoOpacity/100).toFixed(2);
+  }
+  function showOverlayFile(){
+    videoOverlayEl.classList.remove('show');
+    gifOverlayEl.classList.remove('show');
+    const el = activeOverlayEl();
+    if(el && fxVideo) el.classList.add('show');
+  }
+  // Updates the grid's own background (letting the video show through the gaps) and every idle pad's
+  // background (letting it show through idle cells too), without touching a pad that's genuinely lit.
+  function refreshGridForVideoState(){
+    if(fxVideo && currentMediaUrl){
+      liveGrid.style.background = 'transparent';
+      document.documentElement.style.setProperty('--effects-opacity', effectsAlpha().toFixed(2));
+    } else {
+      liveGrid.style.background = gridLineColor;
+      document.documentElement.style.removeProperty('--effects-opacity');
+    }
+    liveCells.forEach((cell,i) => {
+      if(padActive[i]) return;
+      cell.style.backgroundColor = (fxVideo && currentMediaUrl) ? idleVideoBackground() : '';
+    });
+  }
+  // Loads the program's bundled media (if any) once, before playback starts — not re-set on every
+  // cycle step, so the same video doesn't restart or flicker each time the program advances.
+  function loadProgramMedia(program){
+    videoOverlayEl.removeAttribute('src');
+    gifOverlayEl.removeAttribute('src');
+    currentMediaUrl = null; currentMediaType = null;
+    if(!program.media || !program.media.dataUrl) return;
+    currentMediaUrl = program.media.dataUrl;
+    currentMediaType = program.media.mimeType || 'video/mp4';
+    if(currentMediaType.startsWith('video/')){
+      videoOverlayEl.src = currentMediaUrl;
+      videoOverlayEl.play().catch(()=>{});
+    } else {
+      gifOverlayEl.src = currentMediaUrl;
+    }
+  }
+
   // ---------- Apply an imported preset ----------
   function applyImportedPreset(preset){
     ensurePads();
@@ -726,10 +788,11 @@
     });
     gridLineColor = preset.gridLineColor || '#000000';
     gridLineThickness = (typeof preset.gridLineThickness==='number') ? preset.gridLineThickness : 6;
-    liveGrid.style.background = gridLineColor;
     liveGrid.style.gap = gridLineThickness+'px';
     liveGrid.style.padding = gridLineThickness+'px';
-    resetRegrid();
+    // Only snap the grid back to even if the incoming preset doesn't use Re-Grid at all — if it does,
+    // whatever shape the last-pressed pad left the grid in carries over across the preset change.
+    if(!preset.fxPop) resetRegrid();
 
     paletteColors = Array.isArray(preset.paletteColors) ? [...preset.paletteColors] : [];
     randomizeColors = !!preset.randomizeColors;
@@ -748,6 +811,13 @@
     grainOverlayEl.classList.toggle('show', fxGrain);
     if(fxGrain) startGrainFlicker(); else stopGrainFlicker();
 
+    fxVideo = !!preset.fxVideo;
+    videoOpacity = (typeof preset.videoOpacity==='number') ? preset.videoOpacity : 70;
+    videoGridTransparency = (typeof preset.videoGridTransparency==='number') ? preset.videoGridTransparency : 55;
+    applyVideoOpacityUI();
+    showOverlayFile();
+    refreshGridForVideoState();
+
     chainPads = []; lastPressedIndex = -1;
   }
 
@@ -760,7 +830,6 @@
     liveProgramIndex = (liveProgramIndex+1) % program.presets.length;
     const preset = program.presets[liveProgramIndex];
     applyImportedPreset(preset);
-    renderLiveInfo(program, preset);
     if(program.presets.length > 1 && program.intervalSec > 0){
       liveCycleTimer = setTimeout(() => playProgramStep(program), program.intervalSec*1000);
     }
@@ -768,27 +837,43 @@
   function startProgram(program){
     stopLiveCycle();
     liveProgramIndex = -1;
+    loadProgramMedia(program);
     enterLive();
     playProgramStep(program);
   }
 
-  // ---------- Live info + live/setup toggle ----------
-  const liveInfoEl = document.getElementById('liveInfo');
+  // ---------- Gear icon auto-hide + live/setup toggle ----------
   const exitLiveBtn = document.getElementById('exitLive');
-  function renderLiveInfo(program, preset){
-    liveInfoEl.innerHTML = program.name + (program.presets.length>1 ? ' › <b>'+preset.name+'</b>' : '');
+  const AUTO_HIDE_MS = 3000;
+  let overlayHideTimer = null;
+  function revealOverlay(){
+    exitLiveBtn.classList.remove('faded');
+    clearTimeout(overlayHideTimer);
+    overlayHideTimer = setTimeout(() => {
+      exitLiveBtn.classList.add('faded');
+    }, AUTO_HIDE_MS);
   }
+  // Tapping anywhere on the live view brings the icon back, without reacting to MIDI hits
+  // themselves — otherwise it would never get a chance to fade out while you're actually playing.
+  liveGrid.addEventListener('pointerdown', () => {
+    if(exitLiveBtn.classList.contains('show')) revealOverlay();
+  });
   function enterLive(){
     setupEl.classList.add('hide');
     exitLiveBtn.classList.add('show');
-    liveInfoEl.classList.add('show');
+    revealOverlay();
     if(document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(()=>{});
   }
   function exitLive(){
     stopLiveCycle();
+    clearTimeout(overlayHideTimer);
     setupEl.classList.remove('hide');
     exitLiveBtn.classList.remove('show');
-    liveInfoEl.classList.remove('show');
+    exitLiveBtn.classList.remove('faded');
+    videoOverlayEl.pause();
+    videoOverlayEl.classList.remove('show');
+    gifOverlayEl.classList.remove('show');
+    document.documentElement.style.removeProperty('--effects-opacity');
     if(document.exitFullscreen && document.fullscreenElement) document.exitFullscreen().catch(()=>{});
   }
   exitLiveBtn.addEventListener('click', exitLive);
