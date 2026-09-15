@@ -1,0 +1,1535 @@
+{
+  "type": "sabaysabeat-program",
+  "version": 1,
+  "exportedAt": "2026-09-15T01:49:55.771Z",
+  "name": "Monochromatic Regrid - 4s",
+  "intervalSec": 4,
+  "presets": [
+    {
+      "id": "preset_mu0zhftzcktfy",
+      "name": "1",
+      "pads": [
+        {
+          "index": 0,
+          "notes": [
+            64,
+            48
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 1,
+          "notes": [
+            49,
+            65
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 2,
+          "notes": [
+            50,
+            66
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 3,
+          "notes": [
+            51,
+            67
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 4,
+          "notes": [
+            44,
+            60
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 5,
+          "notes": [
+            45,
+            61
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 6,
+          "notes": [
+            46,
+            62
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 7,
+          "notes": [
+            47,
+            63
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 8,
+          "notes": [
+            40,
+            56
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 9,
+          "notes": [
+            41,
+            57
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 10,
+          "notes": [
+            42,
+            58
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 11,
+          "notes": [
+            43,
+            59
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 12,
+          "notes": [
+            36,
+            52
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 13,
+          "notes": [
+            37,
+            53
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 14,
+          "notes": [
+            38,
+            54
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 15,
+          "notes": [
+            55,
+            39
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        }
+      ],
+      "gridLineColor": "#ffffff",
+      "gridLineThickness": 1,
+      "paletteColors": [
+        "#0040ff"
+      ],
+      "randomizeColors": false,
+      "fxHeat": false,
+      "fxSplash": true,
+      "fxEnergy": true,
+      "fxCombo": true,
+      "fxPop": true,
+      "fxRiso": true,
+      "fxGrain": true,
+      "risoColorA": "#0040ff",
+      "risoColorB": "#000000",
+      "fontWeight": 700,
+      "fontRound": 0,
+      "presetTransitionMs": 2000,
+      "regridMode": "alternate",
+      "energyIntensity": 0.5
+    },
+    {
+      "id": "preset_mu0zhxm7ip4dg",
+      "name": "2",
+      "pads": [
+        {
+          "index": 0,
+          "notes": [
+            64,
+            48
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 1,
+          "notes": [
+            49,
+            65
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 2,
+          "notes": [
+            50,
+            66
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 3,
+          "notes": [
+            51,
+            67
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 4,
+          "notes": [
+            44,
+            60
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 5,
+          "notes": [
+            45,
+            61
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 6,
+          "notes": [
+            46,
+            62
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 7,
+          "notes": [
+            47,
+            63
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 8,
+          "notes": [
+            40,
+            56
+          ],
+          "color": "#ff0000",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 9,
+          "notes": [
+            41,
+            57
+          ],
+          "color": "#ff0000",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 10,
+          "notes": [
+            42,
+            58
+          ],
+          "color": "#ff0000",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 11,
+          "notes": [
+            43,
+            59
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 12,
+          "notes": [
+            36,
+            52
+          ],
+          "color": "#ff0000",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 13,
+          "notes": [
+            37,
+            53
+          ],
+          "color": "#ff0000",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 14,
+          "notes": [
+            38,
+            54
+          ],
+          "color": "#ff0000",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 15,
+          "notes": [
+            55,
+            39
+          ],
+          "color": "#ff0000",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        }
+      ],
+      "gridLineColor": "#ffffff",
+      "gridLineThickness": 1,
+      "paletteColors": [
+        "#ff0000"
+      ],
+      "randomizeColors": false,
+      "fxHeat": false,
+      "fxSplash": true,
+      "fxEnergy": true,
+      "fxCombo": true,
+      "fxPop": true,
+      "fxRiso": true,
+      "fxGrain": true,
+      "risoColorA": "#ff0000",
+      "risoColorB": "#000000",
+      "fontWeight": 700,
+      "fontRound": 0,
+      "presetTransitionMs": 2000,
+      "regridMode": "alternate",
+      "energyIntensity": 0.5
+    },
+    {
+      "id": "preset_mu0zifi0vfdcv",
+      "name": "3",
+      "pads": [
+        {
+          "index": 0,
+          "notes": [
+            64,
+            48
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 1,
+          "notes": [
+            49,
+            65
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 2,
+          "notes": [
+            50,
+            66
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 3,
+          "notes": [
+            51,
+            67
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 4,
+          "notes": [
+            44,
+            60
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 5,
+          "notes": [
+            45,
+            61
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 6,
+          "notes": [
+            46,
+            62
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 7,
+          "notes": [
+            47,
+            63
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 8,
+          "notes": [
+            40,
+            56
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 9,
+          "notes": [
+            41,
+            57
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 10,
+          "notes": [
+            42,
+            58
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 11,
+          "notes": [
+            43,
+            59
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 12,
+          "notes": [
+            36,
+            52
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 13,
+          "notes": [
+            37,
+            53
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 14,
+          "notes": [
+            38,
+            54
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 15,
+          "notes": [
+            55,
+            39
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        }
+      ],
+      "gridLineColor": "#ffffff",
+      "gridLineThickness": 1,
+      "paletteColors": [
+        "#ffea00"
+      ],
+      "randomizeColors": false,
+      "fxHeat": false,
+      "fxSplash": true,
+      "fxEnergy": true,
+      "fxCombo": true,
+      "fxPop": true,
+      "fxRiso": true,
+      "fxGrain": true,
+      "risoColorA": "#ffea00",
+      "risoColorB": "#000000",
+      "fontWeight": 700,
+      "fontRound": 0,
+      "presetTransitionMs": 2000,
+      "regridMode": "alternate",
+      "energyIntensity": 0.5
+    },
+    {
+      "id": "preset_mu0ziwnrq2762",
+      "name": "4",
+      "pads": [
+        {
+          "index": 0,
+          "notes": [
+            64,
+            48
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 1,
+          "notes": [
+            49,
+            65
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 2,
+          "notes": [
+            50,
+            66
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 3,
+          "notes": [
+            51,
+            67
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 4,
+          "notes": [
+            44,
+            60
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 5,
+          "notes": [
+            45,
+            61
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 6,
+          "notes": [
+            46,
+            62
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 7,
+          "notes": [
+            47,
+            63
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 8,
+          "notes": [
+            40,
+            56
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 9,
+          "notes": [
+            41,
+            57
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 10,
+          "notes": [
+            42,
+            58
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 11,
+          "notes": [
+            43,
+            59
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 12,
+          "notes": [
+            36,
+            52
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 13,
+          "notes": [
+            37,
+            53
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 14,
+          "notes": [
+            38,
+            54
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 15,
+          "notes": [
+            55,
+            39
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        }
+      ],
+      "gridLineColor": "#ffffff",
+      "gridLineThickness": 1,
+      "paletteColors": [
+        "#ff57a0"
+      ],
+      "randomizeColors": false,
+      "fxHeat": false,
+      "fxSplash": true,
+      "fxEnergy": true,
+      "fxCombo": true,
+      "fxPop": true,
+      "fxRiso": true,
+      "fxGrain": true,
+      "risoColorA": "#ff57a0",
+      "risoColorB": "#000000",
+      "fontWeight": 700,
+      "fontRound": 0,
+      "presetTransitionMs": 2000,
+      "regridMode": "alternate",
+      "energyIntensity": 0.5
+    },
+    {
+      "id": "preset_mu0zjooz854np",
+      "name": "5",
+      "pads": [
+        {
+          "index": 0,
+          "notes": [
+            64,
+            48
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 1,
+          "notes": [
+            49,
+            65
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 2,
+          "notes": [
+            50,
+            66
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 3,
+          "notes": [
+            51,
+            67
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 4,
+          "notes": [
+            44,
+            60
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 5,
+          "notes": [
+            45,
+            61
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 6,
+          "notes": [
+            46,
+            62
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 7,
+          "notes": [
+            47,
+            63
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 8,
+          "notes": [
+            40,
+            56
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 9,
+          "notes": [
+            41,
+            57
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 10,
+          "notes": [
+            42,
+            58
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 11,
+          "notes": [
+            43,
+            59
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 12,
+          "notes": [
+            36,
+            52
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 13,
+          "notes": [
+            37,
+            53
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 14,
+          "notes": [
+            38,
+            54
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 15,
+          "notes": [
+            55,
+            39
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        }
+      ],
+      "gridLineColor": "#ffffff",
+      "gridLineThickness": 1,
+      "paletteColors": [
+        "#00eeff"
+      ],
+      "randomizeColors": false,
+      "fxHeat": false,
+      "fxSplash": true,
+      "fxEnergy": true,
+      "fxCombo": true,
+      "fxPop": true,
+      "fxRiso": true,
+      "fxGrain": true,
+      "risoColorA": "#00eeff",
+      "risoColorB": "#000000",
+      "fontWeight": 700,
+      "fontRound": 0,
+      "presetTransitionMs": 2000,
+      "regridMode": "alternate",
+      "energyIntensity": 0.5
+    },
+    {
+      "id": "preset_mu0zkfqy5adkw",
+      "name": "6",
+      "pads": [
+        {
+          "index": 0,
+          "notes": [
+            64,
+            48
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 1,
+          "notes": [
+            49,
+            65
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 2,
+          "notes": [
+            50,
+            66
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 3,
+          "notes": [
+            51,
+            67
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 4,
+          "notes": [
+            44,
+            60
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 5,
+          "notes": [
+            45,
+            61
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 6,
+          "notes": [
+            46,
+            62
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 7,
+          "notes": [
+            47,
+            63
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 8,
+          "notes": [
+            40,
+            56
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 9,
+          "notes": [
+            41,
+            57
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 10,
+          "notes": [
+            42,
+            58
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 11,
+          "notes": [
+            43,
+            59
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 12,
+          "notes": [
+            36,
+            52
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 13,
+          "notes": [
+            37,
+            53
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 14,
+          "notes": [
+            38,
+            54
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 15,
+          "notes": [
+            55,
+            39
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        }
+      ],
+      "gridLineColor": "#ffffff",
+      "gridLineThickness": 1,
+      "paletteColors": [
+        "#ffae00"
+      ],
+      "randomizeColors": false,
+      "fxHeat": false,
+      "fxSplash": true,
+      "fxEnergy": true,
+      "fxCombo": true,
+      "fxPop": true,
+      "fxRiso": true,
+      "fxGrain": true,
+      "risoColorA": "#ffae00",
+      "risoColorB": "#000000",
+      "fontWeight": 700,
+      "fontRound": 0,
+      "presetTransitionMs": 2000,
+      "regridMode": "alternate",
+      "energyIntensity": 0.5
+    },
+    {
+      "id": "preset_mu0zl1k0nul0e",
+      "name": "7",
+      "pads": [
+        {
+          "index": 0,
+          "notes": [
+            64,
+            48
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 1,
+          "notes": [
+            49,
+            65
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 2,
+          "notes": [
+            50,
+            66
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 3,
+          "notes": [
+            51,
+            67
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 4,
+          "notes": [
+            44,
+            60
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 5,
+          "notes": [
+            45,
+            61
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 6,
+          "notes": [
+            46,
+            62
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 7,
+          "notes": [
+            47,
+            63
+          ],
+          "color": "#0040ff",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 8,
+          "notes": [
+            40,
+            56
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 9,
+          "notes": [
+            41,
+            57
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 10,
+          "notes": [
+            42,
+            58
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 11,
+          "notes": [
+            43,
+            59
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 12,
+          "notes": [
+            36,
+            52
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 13,
+          "notes": [
+            37,
+            53
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 14,
+          "notes": [
+            38,
+            54
+          ],
+          "color": "#ffea00",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        },
+        {
+          "index": 15,
+          "notes": [
+            55,
+            39
+          ],
+          "color": "#ff57a0",
+          "durationBeats": null,
+          "label": "",
+          "labelColor": "#ffffff",
+          "labelSize": 28
+        }
+      ],
+      "gridLineColor": "#ffffff",
+      "gridLineThickness": 1,
+      "paletteColors": [
+        "#8c00ff"
+      ],
+      "randomizeColors": false,
+      "fxHeat": false,
+      "fxSplash": true,
+      "fxEnergy": true,
+      "fxCombo": true,
+      "fxPop": true,
+      "fxRiso": true,
+      "fxGrain": true,
+      "risoColorA": "#8c00ff",
+      "risoColorB": "#000000",
+      "fontWeight": 700,
+      "fontRound": 0,
+      "presetTransitionMs": 2000,
+      "regridMode": "alternate",
+      "energyIntensity": 0.5
+    }
+  ]
+}
